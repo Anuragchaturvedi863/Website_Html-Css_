@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.firstnavbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    position: sticky;
+}
+.firstnavbar ul {
+    display: flex;
+    list-style: none;
+    gap: 160px;
+    align-items: center;
+    color: #495057;
+
+    
+}
+.firstnavbar .logo{
+    font-size: 40px;
+    color: #44425A;
+    margin-top: 20px;
+    position: relative;
+    right: 22px;
+
+}
+.firstnavbar .officeicon,.emailicon,.phoneicon{
+    
+    font-size: 30px;
+    color: #FF6600;
+    position: relative;
+    top: 40px;
+    right: 15px;
+    
+}
+.firstnavbar ul li span{
+    margin-left: 25px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+.firstnavbar h1 .logospan{
+    color: #FF6600;
+}
+.firstnavbar h3{
+    position: relative;
+    left: 30px;
+}
+.firstnavbar label{
+    display: none;
+}
+#click:checked~.secondnavbar ul{
+    display: block;
+}
+@media screen and (max-width: 449px)  {
+    .firstnavbar label{
+        display: block;
+    }
+    .firstnavbar ul{
+        display: none;
+    }
+    .secondnavbar ul:hover{
+        cursor: pointer;
+        color: #FF6600;
+    }
+    .secondnavbar,ul{
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    .secondnavbar p{
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    .secondnavbar button{
+        display: none;
+        position: relative;
+        width: 100%;
+    }
+    
+}
+.secondnavbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+.secondnavbar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+.secondnavbar ul li a{
+    text-decoration: none;
+    color: #495057;
+
+    font-size: 20px;
+    font-weight: 550;
+}
+.secondnavbar .bookicon{
+    color: #FF6600;
+    position: relative;
+    right: 10px;
+}
+.secondnavbar p{
+    font-size: 20px;
+    color: #44425A;
+    font-weight: 550;
+    position: relative;
+    right: 30px;
+}
+.secondnavbar p:hover{
+    cursor: pointer;
+}
+
+.secondnavbar button{
+    background-color: #FF6600;
+    color: white;
+    padding: 14px 30px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    position: relative;
+    left: 70px;
+    font-weight: bold;
+   
+}
+
+.hero{
+    margin-top: 12px;
+    background-image: url(/carousel-1.jpg);
+    height: 100vh;
+    background-position: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.hero .display{
+    position: relative;
+    top: 240px;
+    left: 270px;
+}
+.hero .display .display-1{
+    font-size: 21px;
+    font-weight: bold;
+}
+.hero .display .display-2{
+    font-size: 80px;
+    margin-top: 15px;
+}
+
+.hero .display button{
+    margin-top: 30px;
+    background-color: #FF6600;
+    color: white;
+    padding: 12px 25px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width : 449px ){
+    .hero .display .display-2{
+        font-size: 60px;
+        margin-top: 12px;
+    }
+    .hero .display button{
+        margin-top: 24px;
+    }
+    .hero{
+        margin-top: 8px;
+    }
+    .hero .display{
+        position: relative;
+        top: 120px;
+        left: 50px;
+    }
+}
+.about{
+  display: flex;
+  margin-top: 200px;
+  margin-left: 125px;
+  flex-wrap: wrap;
+}
+.about .firstabout{
+    margin-left: 30px;
+    margin-top: 55px;
+}
+.about img{
+    border-radius: 8px;
+    height: 445px;
+    width: 445px;
+    
+}
+.about .firstabout h5{
+    letter-spacing: 5px;
+    color: #FF6600;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about .firstabout h1{
+    color: #44425a;
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+.about .firstabout p{
+    color: #6C6A74;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.about .firstabout button{
+    margin-top: 30px;
+    background-color: #FF6600;
+    color: white;
+    padding: 12px 25px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width : 449px) {
+    .about{
+        display: flex;
+        margin-top: 270px;
+        margin-left: 50px;
+      }
+      
+}
+.subjects .firstsubjectsh5{
+    letter-spacing: 5px;
+    color: #FF6600;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 170px;
+}
+.subjects .firstsubjectsh1{
+    color: #44425a;
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+.subjects .secondsubjects{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    column-gap: 35px;
+    row-gap: 35px;
+    grid-template-rows: 150px 150px;
+    color: white;
+    margin-top: 45px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.subjects .secondsubjects .div1{
+    background-image: url(/cat-1.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.subjects .secondsubjects .div2{
+    background-image: url(/cat-2.jpg);
+    /* width: 280px; */
+    /* height: 160px; */
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div3{
+    background-image: url(/cat-3.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div4{
+    background-image: url(/cat-4.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div5{
+    background-image: url(/cat-5.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div6{
+    background-image: url(/cat-6.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div7{
+    background-image: url(/cat-7.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subjects .secondsubjects .div8{
+    background-image: url(/cat-8.jpg);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:450px) and (max-width:650px) {
+    .secondsubjects{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+    }
+    
+}
+@media screen and (max-width:449px) {
+    .secondsubjects{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1,auto);
+    }
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 30px;
+}
+.courses .coursesdiv1{
+    border-radius: 8px;
+    color: #495057bd;
+}
+.courses .coursesdiv1 .cd1{
+    background-color: rgba(128, 128, 128, 0.075);   
+    padding: 20px; 
+}
+.courses .coursesdiv1 .cd1 h1{
+margin-top: 20px;
+}
+.courses .coursesdiv1 .cd1 .users{
+    color: #FF6600;
+}
+.footer{
+    color: #FF6600;
+    letter-spacing: 5px;
+    background-color: #44425a;
+}
+
+/* about page */
