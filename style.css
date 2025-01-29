@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    box-sizing: border-box;
+}
 .firstnavbar{
     display: flex;
     justify-content: space-around;
@@ -54,18 +57,21 @@
 #click:checked~.secondnavbar ul{
     display: block;
 }
-@media screen and (max-width: 449px)  {
+@media screen and (max-width : 767px){
     .firstnavbar label{
         display: block;
     }
     .firstnavbar ul{
         display: none;
     }
+    /* .secondnavbar{
+        display: block;
+    } */
     .secondnavbar ul:hover{
         cursor: pointer;
         color: #FF6600;
     }
-    .secondnavbar,ul{
+    .secondnavbar ul{
         display: none;
         position: relative;
         width: 100%;
@@ -135,7 +141,6 @@
     margin-top: 12px;
     background-image: url(/carousel-1.jpg);
     height: 100vh;
-    background-position: center;
     color: white;
     flex-wrap: wrap;
 }
@@ -163,7 +168,7 @@
     font-size: 16px;
     font-weight: bold;
 }
-@media screen and (max-width : 449px ){
+@media screen and (max-width : 767px ){
     .hero .display .display-2{
         font-size: 60px;
         margin-top: 12px;
@@ -224,7 +229,7 @@
     font-size: 16px;
     font-weight: bold;
 }
-@media screen and (max-width : 449px) {
+@media screen and (max-width : 767px) {
     .about{
         display: flex;
         margin-top: 270px;
@@ -259,15 +264,17 @@
     margin-right: 120px;
 }
 .subjects .secondsubjects .div1{
-    background-image: url(/cat-1.jpg);
+    background-image: url(/cat-1.jpg);;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px;
     
 }
+
 .subjects .secondsubjects .div2{
     background-image: url(/cat-2.jpg);
     /* width: 280px; */
@@ -278,6 +285,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div3{
     background-image: url(/cat-3.jpg);
@@ -287,6 +295,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div4{
     background-image: url(/cat-4.jpg);
@@ -296,6 +305,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div5{
     background-image: url(/cat-5.jpg);
@@ -305,6 +315,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div6{
     background-image: url(/cat-6.jpg);
@@ -314,6 +325,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div7{
     background-image: url(/cat-7.jpg);
@@ -323,6 +335,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
 .subjects .secondsubjects .div8{
     background-image: url(/cat-8.jpg);
@@ -332,15 +345,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px
 }
-@media screen and (min-width:450px) and (max-width:650px) {
+@media screen and (max-width:767px) {
     .secondsubjects{
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(2,auto);
     }
     
 }
-@media screen and (max-width:449px) {
+@media screen and (max-width:767px) {
     .secondsubjects{
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(1,auto);
@@ -367,9 +381,234 @@ margin-top: 20px;
     color: #FF6600;
 }
 .footer{
+    
+    background-color: #44425a;
+    
+}
+.footer .firstfooter{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: -60px;
+    margin-right: -60px;
+}
+.footer h5{
     color: #FF6600;
     letter-spacing: 5px;
-    background-color: #44425a;
+    font-size: 22px;
+
+}
+.footer p{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 17px;
+    padding: 5px;
+    letter-spacing: 0.3px;
+
+}
+.footer .locicon,.phnicon,.emlicon{
+    padding: 10px;
+}
+.footer,.twittericon,.fbicon,.linkedinicon,.instaicon{
+    color: white;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 8px;
+}
+.footer input{
+padding-left: 25px;
+padding-right: 150px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 25px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-style: none;
+font-size: 16px;
+}
+.footer button{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -15px;
+    background-color: #FF6600;
+    color: #fff;
+    font-size: 16px;
+    border-style: none;
+}
+.footer .fourthfooter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+.footer .fourthfooter .copyicon{
+    padding: 5px;
+}
+.footer .fourthfooter ul{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 35px;
 }
 
+
+
+
+
 /* about page */
+.abouthero{
+    background-image: url(course-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    color: #fff;
+    margin-top: 12px;
+
+}
+.abouthero .aboutherodiv1{
+    margin-top: 80px;
+    margin-left: 130px;
+    padding-bottom: 100px;
+    
+}
+.abouthero .aboutherohead{
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.abouthero .aboutherodiv2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abouthero p,.doublerighticon{
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.abouthero .aboutherodiv2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* teachers page */
+.teachershero{
+    background-image: url(course-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    color: #fff;
+    margin-top: 12px;
+
+}
+.teachershero .teachersherodiv1{
+    margin-top: 80px;
+    margin-left: 130px;
+    padding-bottom: 100px;
+    
+}
+.teachershero .teachersherohead{
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.teachershero .teachersherodiv2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teachershero p,.doublerighticon{
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.teachershero .teachersherodiv2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* COURSES PAGE */
+.courseshero{
+    background-image: url(course-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    color: #fff;
+    margin-top: 12px;
+
+}
+.courseshero .coursesherodiv1{
+    margin-top: 80px;
+    margin-left: 130px;
+    padding-bottom: 100px;
+    
+}
+.courseshero .coursesherohead{
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.courseshero .coursesherodiv2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courseshero p,.doublerighticon{
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.courseshero .coursesherodiv2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* CONTACT PAGE */
+.contacthero{
+    background-image: url(course-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    color: #fff;
+    margin-top: 12px;
+
+}
+.contacthero .contactherodiv1{
+    margin-top: 80px;
+    margin-left: 130px;
+    padding-bottom: 100px;
+    
+}
+.contacthero .contactherohead{
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.contacthero .contactherodiv2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacthero p,.doublerighticon{
+   margin-left: 15px;
+   font-weight: bold;
+   font-size: 18px;
+}
+.contacthero .contactherodiv2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
