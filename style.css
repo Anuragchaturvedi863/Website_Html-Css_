@@ -546,11 +546,7 @@
     font-size: 28px;
   }
 }
-@media screen and (min-width : 768px) and (max-width : 1023px){
-    .courses .coursesh5,.coursesh1{
-        margin-left: -200px;
-    }
-}
+
 
 .footer{
     
@@ -1080,8 +1076,11 @@ margin-left: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-@media screen {
-    
+
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .courses .coursesdiv0{
+        margin-left: 30px;
+    }
 }
 /* CONTACT PAGE */
 .contacthero{
