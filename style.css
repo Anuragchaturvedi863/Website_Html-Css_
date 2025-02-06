@@ -13,7 +13,7 @@
     align-items: center;
     margin-bottom: 25px;
 }
-.firstnavbar ul {
+.firstnavbar .firstnavul {
     display: flex;
     list-style: none;
     gap: 160px;
@@ -25,7 +25,7 @@
 .firstnavbar .logo{
     font-size: 40px;
     color: #44425A;
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
     right: 22px;
 
@@ -39,17 +39,16 @@
     right: 15px;
     
 }
-.firstnavbar ul li span{
-    margin-left: 25px;
+.firstnavbar .firstnavul li .firstnavspan{
+    margin-left: 30px;
     position: relative;
     top: -10px;
-    left: 5px;
     font-size: 20px;
 }
-.firstnavbar h1 .logospan{
+.firstnavbar .logo .logospan{
     color: #FF6600;
 }
-.firstnavbar h3{
+.firstnavbar .firstnavh3{
     position: relative;
     left: 30px;
     font-size: 20px;
@@ -58,54 +57,30 @@
 .firstnavbar label{
     display: none;
 }
-#click:checked~.secondnavbar ul{
+#click:checked~.secondnavbar .secondnavul .secondnavli{
     display: block;
 }
-@media screen and (max-width : 767px){
-    .firstnavbar label{
-        display: block;
+#click{
+    display: none;
     }
-    .firstnavbar ul{
-        display: none;
-    }
-    /* .secondnavbar{
-        display: block;
-    } */
-    .secondnavbar ul:hover{
-        cursor: pointer;
-        color: #FF6600;
-    }
-    .secondnavbar ul{
-        display: block;
-        position: relative;
-        width: 100%;
-    }
-    .secondnavbar p{
-        display: none;
-        position: relative;
-        width: 100%;
-    }
-    .secondnavbar button{
-        display: none;
-        position: relative;
-        width: 100%;
-    }
-    
-}
+ label{
+    color: #44425A;
+ }   
+ 
+
 .secondnavbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    font-family: sans-serif;
     margin-top: 30px;
 }
-.secondnavbar ul{
+.secondnavbar .secondnavul{
     display: flex;
     list-style: none;
     gap: 30px;
 
-}
-.secondnavbar ul li a{
+ }
+.secondnavbar .secondnavul .secondnavli .secondnava{
     text-decoration: none;
     color: #495057;
 
@@ -116,21 +91,19 @@
     color: #FF6600;
     position: relative;
     right: 10px;
-}
-.secondnavbar p{
+} 
+ .secondnavbar .secondnavp{
     font-size: 20px;
     color: #FF6600;
     font-weight: 550;
     position: relative;
-    top: 12px;
+    top: 2px;
     right: 80px;
-}
-
-.secondnavbar a:hover{
+}  
+    .secondnavbar .secondnava:hover{
     color: #FF6600;
-}
-
-.secondnavbar button{
+} 
+ .secondnavbar .secondnavbutton{
     background-color: #FF6600;
     color: white;
     padding: 14px 30px;
@@ -138,34 +111,108 @@
     border-radius: 10px;
     font-size: 16px;
     position: relative;
-    left: 70px;
+    left: 30px;
     font-weight: bold;
    
-}
+} 
+
+  /* First Navbar Tablet view */
+  @media screen and (min-width : 768px) and (max-width : 1023px) {
+    .firstnavbar label{
+        display: block;
+        position: relative;
+        right: -80px;
+    }
+
+    .firstnavbar .firstnavul{
+        display: none;
+    }
+    .secondnavbar .secondnavul .secondnavli{
+        display: none;
+    }
+    .secondnavbar .secondnavp,.secondnavbutton{
+        display: none;
+    }
+    .firstnavbar .logo{
+        font-size: 34px;
+        left: -130px;
+        position: relative;
+        top: -15px;
+    }
+    .secondnavbar .secondnavul .secondnavli .secondnava{
+        font-size: 18px;
+     }
+
+}   
+/* Mobile View */
+@media screen and (max-width : 767px){
+ 
+    .secondnavbar .secondnavul:hover{
+        cursor: pointer;
+        color: #FF6600;
+    }
+    
+    .secondnavbar .secondnavp{
+        position: relative;
+    }
+    .secondnavbar .secondnavbutton{
+        position: relative;
+       
+    }
+    .firstnavbar label{
+        display: block;
+        position: relative;
+        right: -30px;
+    }
+    .firstnavbar .firstnavul{
+        display: none;
+    }
+    .secondnavbar .secondnavul .secondnavli{
+        display: none;
+        
+    }
+    .secondnavbar .secondnavp,.secondnavbutton{
+        display: none;
+        
+    }
+    .firstnavbar .logo{
+        font-size: 33px;
+        left: -40px;
+        position: relative;
+        top: -15px;
+    }
+    .secondnavbar .secondnavul .secondnavli .secondnava{
+       font-size: 18px;
+    }
+} 
+ 
+
 
 .hero{
     margin-top: 12px;
     background-image: url(/carousel-1.jpg);
+    background-size: cover;
     height: 100vh;
     color: white;
     flex-wrap: wrap;
 }
+
 .hero .display{
-    position: relative;
-    top: 240px;
-    left: 270px;
+    margin-left: 270px;
+    margin-top: 200px;
+    
 }
+
 .hero .display .display-1{
     font-size: 21px;
     font-weight: bold;
-    margin-left: -0px;
 }
 .hero .display .display-2{
     font-size: 80px;
     margin-top: 15px;
 }
 
-.hero .display button{
+.hero .display .herobutton{
     margin-top: 30px;
     background-color: #FF6600;
     color: white;
@@ -175,23 +222,44 @@
     font-size: 16px;
     font-weight: bold;
 }
-@media screen and (max-width : 767px ){
+@media screen and (max-width : 767px){
+    .hero .display .display-1{
+        font-size: 22px;
+    }
     .hero .display .display-2{
-        font-size: 60px;
-        margin-top: 12px;
-    }
-    .hero .display button{
-        margin-top: 24px;
-    }
-    .hero{
-        margin-top: 8px;
+        font-size: 37px;
     }
     .hero .display{
-        position: relative;
-        top: 120px;
-        left: 50px;
+        margin-left: 60px;
+        margin-top: 70px;
+        
+    }
+    .hero{
+        height: 380px;
+    }
+    .herobutton{
+        margin-top: -20px;
     }
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .hero{
+        height: 450px;
+        width: 768px;
+    }
+    .hero .display .display-1{
+        font-size: 20px;
+    }
+    .hero .display .display-2{
+        font-size: 55px;
+    }
+    .hero .display{
+        margin-left: 60px;
+        margin-top: 70px;
+        
+    }
+    
+}
+
 .about{
   display: flex;
   margin-top: 200px;
@@ -202,33 +270,33 @@
     margin-left: 30px;
     margin-top: 55px;
 }
-.about img{
+.about .aboutimg{
     border-radius: 8px;
     height: 445px;
     width: 445px;
     margin-top: 30px;
     
 }
-.about .firstabout h5{
+.about .firstabout .abouth5{
     letter-spacing: 5px;
     color: #FF6600;
     font-size: 20px;
     font-weight: bold;
 }
-.about .firstabout h1{
+.about .firstabout .abouth1{
     color: #44425a;
     font-size: 40px;
     margin-top: 15px;
     font-weight: bolder;
 }
-.about .firstabout p{
+.about .firstabout .aboutp{
     color: #6C6A74;
     font-size: 20px;
     margin-top: 20px;
     font-weight: 400;
     margin-left: 0px;
 }
-.about .firstabout button{
+.about .firstabout .aboutbutton{
     margin-top: 30px;
     background-color: #FF6600;
     color: white;
@@ -237,14 +305,35 @@
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
-    margin: -0px;
+}
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .about .aboutimg{
+        height: 600px;
+        width: 600px;
+        margin-left: -90px;
+    }
+    .about .firstabout .aboutp{
+        font-size: 16px;
+    }
+    .about .firstabout{
+        margin-left: -90px;
+    }
 }
 @media screen and (max-width : 767px) {
-    .about{
-        display: flex;
-        margin-top: 270px;
-        margin-left: 50px;
-      }
+    .about .aboutimg{
+        height: 365px;
+        width: 365px;
+        margin-left: -80px;
+    }
+    .about .abouth1{
+        font-size: 28px;
+    }
+    .about .aboutp{
+        font-size: 16px;
+    }
+    .about .firstabout{
+        margin-left: -80px;
+    }
       
 }
 .subjects .firstsubjectsh5{
@@ -263,21 +352,22 @@
     font-weight: bolder;
 }
 .subjects .secondsubjects{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    column-gap: 35px;
-    row-gap: 35px;
-    grid-template-rows: 150px 150px;
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     margin-top: 45px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 100px;
+    margin-right: 50px;
+    gap: 40px;
 }
 .subjects .secondsubjects .div1{
     background-image: url(/cat-1.jpg);;
     background-repeat: no-repeat;
+    width: 240px;
+    height: 150px;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -287,11 +377,12 @@
 
 .subjects .secondsubjects .div2{
     background-image: url(/cat-2.jpg);
-    /* width: 280px; */
-    /* height: 160px; */
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -299,9 +390,12 @@
 }
 .subjects .secondsubjects .div3{
     background-image: url(/cat-3.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -309,9 +403,12 @@
 }
 .subjects .secondsubjects .div4{
     background-image: url(/cat-4.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -319,9 +416,12 @@
 }
 .subjects .secondsubjects .div5{
     background-image: url(/cat-5.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -329,9 +429,12 @@
 }
 .subjects .secondsubjects .div6{
     background-image: url(/cat-6.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -339,9 +442,12 @@
 }
 .subjects .secondsubjects .div7{
     background-image: url(/cat-7.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -349,31 +455,107 @@
 }
 .subjects .secondsubjects .div8{
     background-image: url(/cat-8.jpg);
+    width: 240px;
+    height: 150px;
     background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 6px
 }
-@media screen and (max-width:767px) {
-    .secondsubjects{
-        grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(2,auto);
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+    .subjects .secondsubjects .div1{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div2{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div3{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div4{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div5{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div6{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div7{
+        width: 330px;
+        height: 206px;
+    }
+    .subjects .secondsubjects .div8{
+        width: 330px;
+        height: 206px;
     }
     
+    .subjects .secondsubjects{
+         margin-left: 30px;
+         margin-right: 30px;
+    }
 }
 @media screen and (max-width:767px) {
-    .secondsubjects{
-        grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(1,auto);
+  .subjects .secondsubjects .div1{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div2{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div3{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div4{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div5{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div6{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div7{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects .div8{
+    width: 365px;
+    height: 228px;
+  }
+  .subjects .secondsubjects{
+    margin-left: 30px;
+    margin-right: 25px;
+  }
+  .subjects .firstsubjectsh1{
+    font-size: 28px;
+  }
+}
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .courses .coursesh5,.coursesh1{
+        margin-left: -200px;
     }
 }
 
 .footer{
     
     background-color: #44425a;
+    width: 100%;
     
 }
 .footer .firstfooter{
@@ -382,9 +564,8 @@
     flex-wrap: wrap;
     margin-top: 60px;
     margin-left: -60px;
-    margin-right: -60px;
 }
-.footer h5{
+.footer .footerh5{
     color: #FF6600;
     letter-spacing: 5px;
     font-size: 22px;
@@ -394,9 +575,10 @@
 .footer .get{
     margin-left: 64px;
 }
-.footer p{
+.footer .footerp{
     color: #fff;
     margin-top: 15px;
+    margin-left: 50px;
     font-size: 17px;
     padding: 5px;
     letter-spacing: 0.3px;
@@ -416,7 +598,7 @@
     padding: 8px;
     border-radius: 8px;
 }
-.footer input{
+.footer .footerinput{
 padding-left: 25px;
 padding-right: 150px;
 padding-top: 20px;
@@ -428,7 +610,7 @@ border-style: none;
 font-size: 16px;
 margin-left: 50px;
 }
-.footer button{
+.footer .footerbutton{
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -450,7 +632,7 @@ margin-left: 50px;
 .footer .fourthfooter .copyicon{
     padding: 5px;
 }
-.footer .fourthfooter ul{
+.footer .fourthfooter .footerul{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -489,12 +671,15 @@ margin-left: 50px;
     flex-wrap: wrap;
 }
 
-.abouthero p,.doublerighticon{
+.abouthero .aboutp,.doublerighticon{
    margin-left: 15px;
    font-weight: bold;
    font-size: 18px;
 }
-.abouthero .aboutherodiv2 a{
+.abouthero .doublerighticon{
+    margin-top: 3px;
+}
+.abouthero .aboutherodiv2 .abouta{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -518,38 +703,38 @@ margin-left: 50px;
     margin-left: -65px;
 }
 
-.registration .regisdiv1 h5{
+.registration .regisdiv1 .regish5{
     color: #FF6600;
     font-size: 22px;
     letter-spacing: 5px;
     font-weight: bold;
 }
-.registration .regisdiv1 h5,.regisheadh1,p,ul{
+.registration .regisdiv1 .regidh5,.regisheadh1,.regisp,.regisul{
     margin-left: 50px;
 }
-.registration .regisdiv1 h5,.regisheadh1,p{
+.registration .regisdiv1 .regish5,.regisheadh1,.regisp{
     margin-bottom: 20px;
 }
 .registration .regisdiv1 .regisheadh1{
     font-size: 35px;
     font-weight: bolder;
 }
-.registration .regisdiv1 .regisheadh1,p,ul{
+.registration .regisdiv1 .regisheadh1,.regisp,.regisul{
     color: #fff;
     
 }
-.registration .regisdiv1 p,ul{
+.registration .regisdiv1 .regisp,.regisul{
     font-size: 20px;
     font-weight: lighter;
 }
 
-.registration .regisdiv1 ul{
+.registration .regisdiv1 .regisul{
     list-style: none;
 }
-.registration .regisdiv1 ul li{
+.registration .regisdiv1 .regisul .regisli{
     margin-top: 15px;
 }
-.registration .regisdiv1 ul li .checkicon1,.checkicon2,.checkicon3{
+.registration .regisdiv1 .regisul .regisli .checkicon1,.checkicon2,.checkicon3{
     color: #FF6600;
     margin-right: 15px;
     font-size: 16px;
@@ -578,7 +763,7 @@ margin-left: 50px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;    
 }
-.registration .regisdiv2 .regisdiv4 input{
+.registration .regisdiv2 .regisdiv4 .regisinput{
     padding-left: 20px;
     padding-right: 120px;
     padding-top: 14px;
@@ -599,7 +784,7 @@ margin-left: 50px;
     color: #495057;
     font-size: 17px;
 }
-.registration .regisdiv2 .regisdiv4 button{
+.registration .regisdiv2 .regisdiv4 .regisbutton{
     padding-left: 116px;
     padding-right: 116px;
     padding-top: 18px;
@@ -688,12 +873,15 @@ margin-left: 50px;
     flex-wrap: wrap;
 }
 
-.teachershero p,.doublerighticon{
+.teachershero .teachersp,.doublerighticon{
    margin-left: 15px;
    font-weight: bold;
    font-size: 18px;
 }
-.teachershero .teachersherodiv2 a{
+.teachershero .doublerighticon{
+    margin-top: 3px;
+}
+.teachershero .teachersherodiv2 .teachersa{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -774,12 +962,15 @@ margin-left: 50px;
     flex-wrap: wrap;
 }
 
-.courseshero p,.doublerighticon{
+.courseshero .coursesp,.doublerighticon{
    margin-left: 15px;
    font-weight: bold;
    font-size: 18px;
 }
-.courseshero .coursesherodiv2 a{
+.courseshero .doublerighticon{
+    margin-top: 3px;
+}
+.courseshero .coursesherodiv2 .coursesa{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -918,12 +1109,15 @@ margin-left: 50px;
     flex-wrap: wrap;
 }
 
-.contacthero p,.doublerighticon{
+.contacthero .contactp,.doublerighticon{
    margin-left: 15px;
    font-weight: bold;
    font-size: 18px;
 }
-.contacthero .contactherodiv2 a{
+.contacthero .doublerighticon{
+    margin-top: 3px;
+}
+.contacthero .contactherodiv2 .contacta{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
