@@ -568,9 +568,7 @@
     margin-left: 55px;
 
 }
-.footer .get{
-    margin-left: 64px;
-}
+
 .footer .footerp{
     color: #fff;
     margin-top: 15px;
@@ -628,14 +626,161 @@ margin-left: 50px;
 .footer .fourthfooter .copyicon{
     padding: 5px;
 }
-.footer .fourthfooter .footerul{
+.footer .footerul{
     display: flex;
     gap: 50px;
+    justify-content: end;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 25px;
-    margin-right: 35px;
+   position: relative;
+   top: -50px;
+   right: 30px;
 }
+.footer .footerul li{
+    font-size: 16px;
+}
+
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .footer .footerh5{
+        font-size: 20px;
+        position: relative;
+        left: 6px;
+        bottom: 15px;
+    }
+    .footer .thirdfooterdiv .footerp{
+       position: relative;
+       left: 5px;
+    }
+    .footer .footerh1,.twittericon,.fbicon,.linkedinicon,.instaicon,.locicon,.phnicon,.emlicon,.footerp,.copyicon,.righticon{
+        font-size: 16px;
+    }
+    .footer .firstfooterdiv,.secondfooterdiv,.thirdfooterdiv{
+        margin-left: -110px;
+    }
+    .footer .firstfooterdiv,.secondfooterdiv{
+        margin-top: 40px;
+    }
+    .footer .socialicons{
+        margin-bottom: 50px;
+        position: relative;
+        right: 10px;
+    }
+    .footer .secondfooterdiv{
+      position: relative;
+      right: 22px;
+    }
+    .footer .footerinput{
+        padding-right: 300px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .footer .footerbutton{
+            padding-top: 18px;
+            padding-bottom: 18px;
+        }
+    .footer .footerinput,.footerbutton{
+            position: relative;
+            left: 10px;
+    }
+    .footer .fourthfooter .footerp{
+        position: relative;
+        right: 40px;
+    }
+    .footer .footerul{
+        display: flex;
+        justify-content: end;
+        gap: 40px;
+        list-style: none;
+        position: relative;
+        top: -12px;
+        right: 50px;
+    }
+    .footer .footerp{
+        margin-top: 1px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer .footerh5{
+        font-size: 20px;
+        position: relative;
+        left: 7px;
+        bottom: 10px;
+    }
+    .footer .footerh1,.twittericon,.fbicon,.linkedinicon,.instaicon,.locicon,.phnicon,.emlicon,.footerp,.copyicon,.righticon{
+        font-size: 16px;
+    }
+    .footer .firstfooterdiv{
+        margin-top: 38px;
+    }
+    .footer .firstfooterdiv{
+        position: relative;
+        right: 60px;
+
+    }
+    .footer .secondfooterdiv{
+        position: relative;
+        top: 50px;
+        right: 80px;
+    }
+    .footer .secondfooterdiv .footerh5{
+        margin-bottom: 20px;
+    }
+    .footer .secondfooterdiv .footerp{
+        position: relative;
+        left: 5px;
+        top: -7px;
+     }
+     .footer .footerp{
+        margin-top: 1px;
+
+     }
+     .footer .thirdfooterdiv{
+        position: relative;
+        top: 100px;
+        left: 5px;
+     }
+     .footer .thirdfooterdiv .footerp{
+        position: relative;
+        top: 8px;
+        left: 9px;
+     }
+
+     .footer .footerinput{
+        padding-right: 80px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        position: relative;
+     }
+     .footer .footerbutton{
+        padding-top: 18px;
+        padding-bottom: 18px;
+     }
+     .footer .footerinput,.footerbutton{
+        position: relative;
+        left: 10px;
+    }
+    .footer .fourthfooter{
+        position: relative;
+        top: 100px;
+        left: -50px;
+       
+       
+    }
+    .footer .fourthfooter .footerp{
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    .footer .footerul{
+        position: relative;
+        top: 110px;
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    }
 
 
 
@@ -644,8 +789,10 @@ margin-left: 50px;
 /* about page */
 .abouthero{
     background-image: url(course-3.jpg);
+    height: 50vh;
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: cover;
+    background-position: center center;
     color: #fff;
     margin-top: 12px;
 
@@ -681,11 +828,37 @@ margin-left: 50px;
     font-weight: bold;
     font-size: 18px;
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
+   .abouthero .aboutherodiv1 .aboutherohead{
+    font-size: 44px;
+   }
+   .abouthero .aboutherodiv2 .aboutp,.doublerighticon{
+    font-size: 16px;
+   }
+   .aboutherodiv1{
+    position: relative;
+    left: -110px;
+   }
+}
+@media screen and (max-width:767px) {
+    .abouthero .aboutherodiv1 .aboutherohead{
+        font-size: 35px;
+       }
+       .abouthero .aboutherodiv2 .aboutp,.doublerighticon{
+        font-size: 16px;
+       }
+       .aboutherodiv1{
+        position: relative;
+        left: -110px;
+    }
+}
+
 /* REGISTRATION SECTION */
 .registration{
     background-image: url(/course-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     margin-top: 190px;
     display: flex;
     flex-wrap: wrap;
@@ -793,6 +966,40 @@ margin-left: 50px;
     color: #fff;
     font-size: 17px;
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .registration .regisdiv1 .regisheadh1{
+        font-size: 33px;
+        position: relative;
+        left: -50px;
+    }
+    .registration .regisdiv1 .regisp{
+        position: relative;
+        left: -50px;
+    }
+
+    .registration .regisdiv3 .regish1{
+        font-size: 33px;
+    }
+
+    
+
+    .registration .regisdiv1{
+        position: relative;
+        top: -60px;
+        left: 70px;
+    }
+
+}
+@media screen and (max-width:767px) {
+    .registration .regisdiv1 .regisheadh1{
+        font-size: 28px;
+        position: relative;
+    }
+    .registration .regisdiv3 .regish1{
+        font-size: 28px;
+    }
+
+}
     /* TESTIMONIAL SECTION */
 .testimonial{
     margin-top: 140px;
@@ -841,13 +1048,20 @@ margin-left: 50px;
     margin-left: 90px;
     font-size: 16px;
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
+
+}
+@media screen and (max-width:767px) {
+    
+}
 
 
 /* teachers page */
 .teachershero{
     background-image: url(course-3.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: cover;
+    background-position: center center;
     color: #fff;
     margin-top: 12px;
 
@@ -883,6 +1097,30 @@ margin-left: 50px;
     font-weight: bold;
     font-size: 18px;
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .teachershero .teachersherodiv1 .teachersherohead{
+     font-size: 44px;
+    }
+    .teachershero .teachersherodiv2 .teachersp,.doublerighticon{
+     font-size: 16px;
+    }
+    .teachersherodiv1{
+     position: relative;
+     left: -110px;
+    }
+ }
+ @media screen and (max-width:767px) {
+     .teachershero .teachersherodiv1 .teachersherohead{
+         font-size: 35px;
+        }
+        .teachershero .teachersherodiv2 .teachersp,.doublerighticon{
+         font-size: 16px;
+        }
+        .teachersherodiv1{
+         position: relative;
+         left: -110px;
+     }
+ }
 .team{
     margin-top: 170px;
     margin-left: 570px;
@@ -927,20 +1165,24 @@ margin-left: 50px;
     margin: 15px;
 }
 
+@media screen and (min-width : 768px) and (max-width : 1023px){
+
+}
+@media screen and (max-width:767px) {
+    
+}
+
 /* COURSES PAGE */
 .courseshero{
     background-image: url(course-3.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     margin-top: 12px;
 
 }
-@media screen and (max-width:767px){
-   .courseshero{
 
-   }
-}
 .courseshero .coursesherodiv1{
     margin-top: 80px;
     margin-left: 130px;
@@ -973,6 +1215,31 @@ margin-left: 50px;
     font-size: 18px;
 }
 
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .courseshero .coursesherodiv1 .coursesherohead{
+     font-size: 44px;
+    }
+    .courseshero .coursesherodiv2 .coursesp,.doublerighticon{
+     font-size: 16px;
+    }
+    .coursesherodiv1{
+     position: relative;
+     left: -110px;
+    }
+ }
+ @media screen and (max-width:767px) {
+     .courseshero .coursesherodiv1 .coursesherohead{
+         font-size: 35px;
+        }
+        .courseshero .coursesherodiv2 .coursesp,.doublerighticon{
+         font-size: 16px;
+        }
+        .coursesherodiv1{
+         position: relative;
+         left: -110px;
+     }
+ }
+
 /* Courses page Courses Section */
 .courses{
     margin-bottom: 190px;
@@ -983,7 +1250,7 @@ margin-left: 50px;
     margin-top: 180px;
     margin-bottom: 40px;
 }
-@media screen and (max-width:425px) {
+/* @media screen and (max-width:425px) {
     .courses .coursesdiv0{
         margin-left: 230px;
         margin-top: 90px;
@@ -992,7 +1259,7 @@ margin-left: 50px;
     .courses .coursesdiv0 .coursesh5{
         margin-left: 5px;
     }
-}
+} */
 .courses .coursesh5{
     color: #FF6600;
     letter-spacing: 5px;
@@ -1009,6 +1276,8 @@ margin-left: 50px;
 .coursesdiv{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding-left: 110px;
     padding-right: 90px;
 }
@@ -1036,6 +1305,11 @@ margin-left: 50px;
     color: #44425A;
     margin-top: 50px;
     font-size: 16px;
+}
+.h5dark1{
+    color: #44425A;
+    margin-top: 45px;
+    font-size: 20px;
 }
 .coursesanchor{
     text-decoration: none;
@@ -1078,15 +1352,57 @@ margin-left: 50px;
 }
 
 @media screen and (min-width : 768px) and (max-width : 1023px){
-    .courses .coursesdiv0{
-        margin-left: 30px;
+   .courses .coursesdiv0 .coursesh1{
+    font-size: 33px;
+   }
+   .courses .coursesdiv0{
+    margin-left: 200px;
+   }
+   .courses .h5light,.usericon,.clockicon{
+    font-size: 13px;
+   }
+
+   .courses .coursesanchor,.h5dark1{
+    font-size: 20px;
+   }
+   .courses .staricon{
+    font-size: 16px;
+   }
+   .courses .coursesdiv1,.coursesdiv2,.coursesdiv3,.coursesdiv4,.coursesdiv5,.coursesdiv6{
+     margin: 20px;
+   
+   }
+    .coursesdiv{
+        margin-left: -100px;
+        padding-right: 5px;
+    
+       
     }
 }
+@media screen and (max-width:767px) {
+    .courses .coursesdiv0 .coursesh1{
+        font-size: 28px;
+    }
+    .courses .coursesdiv0{
+       margin-left: 60px;
+    }
+    .coursesdiv{
+        margin-left: -10px;
+       
+    }
+    .courses .coursesdiv .coursesimg{
+        width: 365px;
+        height: 244px;
+    }
+    
+}
+
 /* CONTACT PAGE */
 .contacthero{
     background-image: url(course-3.jpg);
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: cover;
+    background-position: center center;
     color: #fff;
     margin-top: 12px;
 
@@ -1122,6 +1438,31 @@ margin-left: 50px;
     font-weight: bold;
     font-size: 18px;
 }
+
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    .contacthero .contactherodiv1 .contactherohead{
+     font-size: 44px;
+    }
+    .contacthero .contactherodiv2 .contactp,.doublerighticon{
+     font-size: 16px;
+    }
+    .contactherodiv1{
+     position: relative;
+     left: -110px;
+    }
+ }
+ @media screen and (max-width:767px) {
+     .contacthero .contactherodiv1 .contactherohead{
+         font-size: 35px;
+        }
+        .contacthero .contactherodiv2 .contactp,.doublerighticon{
+         font-size: 16px;
+        }
+        .contactherodiv1{
+         position: relative;
+         left: -110px;
+     }
+ }
 /* contact contact section */
 .contact{
     margin-top: 180px;
@@ -1183,4 +1524,9 @@ margin-left: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+@media screen and (min-width : 768px) and (max-width : 1023px){
 
+}
+@media screen and (max-width:767px) {
+    
+}
