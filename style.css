@@ -100,9 +100,7 @@
     top: 2px;
     right: 80px;
 }  
-    .secondnavbar .secondnava:hover{
-    color: #FF6600;
-} 
+
  .secondnavbar .secondnavbutton{
     background-color: #FF6600;
     color: white;
@@ -115,6 +113,12 @@
     font-weight: bold;
    
 } 
+
+.btn:hover{
+    color: pink;
+    background-color: black;
+
+}
 
   /* First Navbar Tablet view */
   @media screen and (min-width : 768px) and (max-width : 1023px) {
@@ -212,7 +216,7 @@
     margin-top: 15px;
 }
 
-.hero .display .herobutton{
+.hero .display .btn{
     margin-top: 30px;
     background-color: #FF6600;
     color: white;
